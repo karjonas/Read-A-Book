@@ -1854,7 +1854,7 @@
             <StartX>160</StartX>
             <StartY>160</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
-            <MovementSpeed>6</MovementSpeed>
+            <MovementSpeed>4</MovementSpeed>
             <MovementSpeedX>3</MovementSpeedX>
             <MovementSpeedY>0</MovementSpeedY>
             <AnimationDelay>2</AnimationDelay>
@@ -2359,25 +2359,97 @@ return
               </Sprite>
               <Sprite Slot="2008" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2009" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2010" Width="11" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2011" Width="11" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2012" Width="15" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2013" Width="15" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2014" Width="17" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2015" Width="12" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2016" Width="15" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2017" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2018" Width="15" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="2010" Width="24" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\left0.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2011" Width="24" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\left1.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2012" Width="24" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\left2.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2013" Width="24" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\left3.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2014" Width="24" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\left4.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2015" Width="24" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\left5.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2016" Width="24" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\left6.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2017" Width="24" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\left7.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2018" Width="24" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\left8.png</FileName>
+                </Source>
+              </Sprite>
               <Sprite Slot="2019" Width="11" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2020" Width="11" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2021" Width="11" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2022" Width="15" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2023" Width="15" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2024" Width="17" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2025" Width="12" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2026" Width="15" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2027" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2028" Width="15" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="2020" Width="24" Height="50" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\right0.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2021" Width="24" Height="50" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\right1.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2022" Width="24" Height="50" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\right2.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2023" Width="24" Height="50" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\right3.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2024" Width="24" Height="50" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\right4.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2025" Width="24" Height="50" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\right5.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2026" Width="24" Height="50" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\right6.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2027" Width="24" Height="50" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\right7.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2028" Width="24" Height="50" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero\right8.png</FileName>
+                </Source>
+              </Sprite>
               <Sprite Slot="2029" Width="11" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2030" Width="16" Height="49" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
                 <Source>
@@ -2606,13 +2678,6 @@ return
                     <Delay>0</Delay>
                     <Sound>0</Sound>
                   </ViewFrame>
-                  <ViewFrame>
-                    <ID>9</ID>
-                    <Image>2019</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
                 </Frames>
               </Loop>
               <Loop>
@@ -2678,13 +2743,6 @@ return
                   <ViewFrame>
                     <ID>8</ID>
                     <Image>2028</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                  <ViewFrame>
-                    <ID>9</ID>
-                    <Image>2029</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
