@@ -2317,9 +2317,21 @@ return
           <SpriteFolder Name="Defaults">
             <SubFolders />
             <Sprites>
-              <Sprite Slot="2000" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2001" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2002" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="2000" Width="27" Height="72" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2001" Width="27" Height="72" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2002" Width="27" Height="72" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\hero.png</FileName>
+                </Source>
+              </Sprite>
               <Sprite Slot="2003" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2004" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2005" Width="18" Height="40" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
@@ -2824,8 +2836,8 @@ See KeyboardMovement.txt for details.
     </AudioClips>
     <AudioClipTypes>
       <AudioClipType>
-        <TypeID>1</TypeID>
         <Name xml:space="preserve">Ambient Sound</Name>
+        <TypeID>1</TypeID>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
