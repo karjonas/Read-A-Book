@@ -11,7 +11,7 @@
       <GraphicsDriver>DX5</GraphicsDriver>
       <CompressSprites>False</CompressSprites>
       <SaveScreenshots>False</SaveScreenshots>
-      <RoomTransition>FadeOutAndIn</RoomTransition>
+      <RoomTransition>BlackBoxOut</RoomTransition>
       <MouseWheelEnabled>True</MouseWheelEnabled>
       <UseLowResCoordinatesInScript>False</UseLowResCoordinatesInScript>
       <TurnBeforeFacing>False</TurnBeforeFacing>
@@ -65,7 +65,7 @@
       <Genre>Adventure</Genre>
       <Version>1.0.0.0</Version>
       <WindowsExperienceIndex>1</WindowsExperienceIndex>
-      <DeveloperName />
+      <DeveloperName xml:space="preserve">Jonas Karlsson</DeveloperName>
       <DeveloperURL />
       <EnhancedSaveGames>False</EnhancedSaveGames>
       <SaveGameFileExtension />
@@ -610,6 +610,10 @@
         <UnloadedRooms>
           <UnloadedRoom>
             <Number>1</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>2</Number>
             <Description IsNull="True" />
           </UnloadedRoom>
         </UnloadedRooms>
@@ -1844,13 +1848,13 @@
           <Character>
             <ID>0</ID>
             <ScriptName>cEgo</ScriptName>
-            <RealName>ROGER</RealName>
+            <RealName>Sten-Oskar</RealName>
             <NormalView>1</NormalView>
             <SpeechView>0</SpeechView>
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>1</StartingRoom>
+            <StartingRoom>2</StartingRoom>
             <StartX>160</StartX>
             <StartY>160</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -2538,6 +2542,16 @@ return
           <Sprite Slot="2" Width="11" Height="4" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
           <Sprite Slot="3" Width="11" Height="11" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
           <Sprite Slot="5" Width="36" Height="26" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
+          <Sprite Slot="7" Width="128" Height="48" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\table.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="8" Width="13" Height="6" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\book_green_closed.png</FileName>
+            </Source>
+          </Sprite>
         </Sprites>
       </SpriteFolder>
     </Sprites>
