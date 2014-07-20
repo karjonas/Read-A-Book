@@ -99,7 +99,19 @@
         <CharsForFrame />
       </Frames>
     </LipSync>
-    <PropertyDefinitions />
+    <PropertyDefinitions>
+      <CustomPropertySchemaItem>
+        <Name>open</Name>
+        <Description xml:space="preserve">If the object is open or closed</Description>
+        <DefaultValue>0</DefaultValue>
+        <AppliesToCharacters>False</AppliesToCharacters>
+        <AppliesToHotspots>False</AppliesToHotspots>
+        <AppliesToInvItems>False</AppliesToInvItems>
+        <AppliesToObjects>True</AppliesToObjects>
+        <AppliesToRooms>False</AppliesToRooms>
+        <Type>Boolean</Type>
+      </CustomPropertySchemaItem>
+    </PropertyDefinitions>
     <GlobalMessages>
       <Message ID="500" />
       <Message ID="501" />
@@ -616,6 +628,10 @@
             <Number>2</Number>
             <Description IsNull="True" />
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>3</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -623,26 +639,6 @@
       <GUIFolder Name="Main">
         <SubFolders />
         <GUIs>
-          <GUIMain>
-            <NormalGUI>
-              <OnClick />
-              <Height>13</Height>
-              <Width>320</Width>
-              <Left>0</Left>
-              <Top>0</Top>
-              <Clickable>True</Clickable>
-              <Visibility>Normal</Visibility>
-              <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
-              <BorderColor>1</BorderColor>
-              <Transparency>0</Transparency>
-              <BackgroundColor>8</BackgroundColor>
-              <BackgroundImage>0</BackgroundImage>
-              <ID>0</ID>
-              <Name>gStatusline</Name>
-            </NormalGUI>
-            <Controls />
-          </GUIMain>
           <GUIMain>
             <NormalGUI>
               <OnClick />
@@ -658,7 +654,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>8</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
-              <ID>1</ID>
+              <ID>0</ID>
               <Name>gIconbar</Name>
             </NormalGUI>
             <Controls>
@@ -889,7 +885,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>7</BackgroundColor>
               <BackgroundImage>-1</BackgroundImage>
-              <ID>2</ID>
+              <ID>1</ID>
               <Name>gInventory</Name>
             </NormalGUI>
             <Controls>
@@ -1028,7 +1024,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>8</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
-              <ID>3</ID>
+              <ID>2</ID>
               <Name>gPanel</Name>
             </NormalGUI>
             <Controls>
@@ -1341,7 +1337,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>7</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
-              <ID>4</ID>
+              <ID>3</ID>
               <Name>gRestartYN</Name>
             </NormalGUI>
             <Controls>
@@ -1418,7 +1414,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>7</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
-              <ID>5</ID>
+              <ID>4</ID>
               <Name>gSaveGame</Name>
             </NormalGUI>
             <Controls>
@@ -1550,7 +1546,7 @@
               <Transparency>0</Transparency>
               <BackgroundColor>7</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
-              <ID>6</ID>
+              <ID>5</ID>
               <Name>gRestoreGame</Name>
             </NormalGUI>
             <Controls>
@@ -1878,6 +1874,46 @@
               <Event Index="0">cEgo_Look</Event>
               <Event Index="1">cEgo_Interact</Event>
               <Event Index="2">cEgo_Talk</Event>
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>1</ID>
+            <ScriptName>cEffectsChar</ScriptName>
+            <RealName xml:space="preserve">Effects Character</RealName>
+            <NormalView>3</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>3</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>3</BlinkingView>
+            <StartingRoom>-1</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>100000</MovementSpeedX>
+            <MovementSpeedY>100000</MovementSpeedY>
+            <AnimationDelay>0</AnimationDelay>
+            <SpeechAnimationDelay>0</SpeechAnimationDelay>
+            <SpeechColor>2016</SpeechColor>
+            <Solid>False</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -2313,7 +2349,13 @@ return
       <PaletteEntry Index="255" Type="Background" Red="120" Green="120" Blue="120" />
     </Palette>
     <GlobalVariables>
-      <Variables />
+      <Variables>
+        <GlobalVariable>
+          <Name>in_first_cutscene</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+      </Variables>
     </GlobalVariables>
     <Sprites>
       <SpriteFolder Name="Main">
@@ -2542,7 +2584,7 @@ return
           <Sprite Slot="2" Width="11" Height="4" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
           <Sprite Slot="3" Width="11" Height="11" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
           <Sprite Slot="5" Width="36" Height="26" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-          <Sprite Slot="7" Width="128" Height="48" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+          <Sprite Slot="7" Width="97" Height="32" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
             <Source>
               <FileName>Z:\home\jonas\Coding\insanityjam2\table.png</FileName>
             </Source>
@@ -2550,6 +2592,16 @@ return
           <Sprite Slot="8" Width="13" Height="6" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
             <Source>
               <FileName>Z:\home\jonas\Coding\insanityjam2\book_green_closed.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="9" Width="16" Height="75" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\door_left.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="10" Width="1" Height="1" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\one_color.png</FileName>
             </Source>
           </Sprite>
         </Sprites>
@@ -2842,6 +2894,95 @@ return
                 <ID>0</ID>
                 <RunNextLoop>False</RunNextLoop>
                 <Frames />
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames />
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>3</ID>
+            <Name>EmptyView</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>10</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>10</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>10</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>10</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
               </Loop>
             </Loops>
           </View>
