@@ -1884,7 +1884,7 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>2</StartingRoom>
+            <StartingRoom>8</StartingRoom>
             <StartX>160</StartX>
             <StartY>160</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -2681,6 +2681,11 @@ return
           <Sprite Slot="19" Width="40" Height="126" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
             <Source>
               <FileName>Z:\home\jonas\Coding\insanityjam2\bars.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="20" Width="21" Height="9" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\paper.png</FileName>
             </Source>
           </Sprite>
         </Sprites>
