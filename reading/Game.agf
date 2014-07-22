@@ -646,6 +646,10 @@
                 <Number>9</Number>
                 <Description IsNull="True" />
               </UnloadedRoom>
+              <UnloadedRoom>
+                <Number>10</Number>
+                <Description IsNull="True" />
+              </UnloadedRoom>
             </UnloadedRooms>
           </UnloadedRoomFolder>
           <UnloadedRoomFolder Name="First Floor">
@@ -1893,7 +1897,7 @@
             <MovementSpeedY>0</MovementSpeedY>
             <AnimationDelay>2</AnimationDelay>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
+            <SpeechColor>65535</SpeechColor>
             <Solid>True</Solid>
             <Clickable>True</Clickable>
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
@@ -2688,6 +2692,21 @@ return
               <FileName>Z:\home\jonas\Coding\insanityjam2\paper.png</FileName>
             </Source>
           </Sprite>
+          <Sprite Slot="21" Width="18" Height="8" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\wall_hole_brick.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="22" Width="10" Height="11" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\wall_invisible_brick.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="23" Width="240" Height="20" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\birthday_banner.png</FileName>
+            </Source>
+          </Sprite>
         </Sprites>
       </SpriteFolder>
     </Sprites>
@@ -3094,6 +3113,38 @@ return
                   <ViewFrame>
                     <ID>0</ID>
                     <Image>18</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>5</ID>
+            <Name>InvisibleBrick</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>22</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>21</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
