@@ -624,7 +624,7 @@
             <UnloadedRooms>
               <UnloadedRoom>
                 <Number>4</Number>
-                <Description IsNull="True" />
+                <Description xml:space="preserve">First room</Description>
               </UnloadedRoom>
               <UnloadedRoom>
                 <Number>5</Number>
@@ -632,7 +632,7 @@
               </UnloadedRoom>
               <UnloadedRoom>
                 <Number>6</Number>
-                <Description IsNull="True" />
+                <Description xml:space="preserve">Pass through</Description>
               </UnloadedRoom>
               <UnloadedRoom>
                 <Number>7</Number>
@@ -640,15 +640,27 @@
               </UnloadedRoom>
               <UnloadedRoom>
                 <Number>8</Number>
-                <Description IsNull="True" />
+                <Description xml:space="preserve">Lever room 0</Description>
               </UnloadedRoom>
               <UnloadedRoom>
                 <Number>9</Number>
-                <Description IsNull="True" />
+                <Description>cell_room</Description>
               </UnloadedRoom>
               <UnloadedRoom>
                 <Number>10</Number>
-                <Description IsNull="True" />
+                <Description xml:space="preserve">birthday room</Description>
+              </UnloadedRoom>
+              <UnloadedRoom>
+                <Number>11</Number>
+                <Description xml:space="preserve">Lever room 1</Description>
+              </UnloadedRoom>
+              <UnloadedRoom>
+                <Number>12</Number>
+                <Description xml:space="preserve">Lever room 2</Description>
+              </UnloadedRoom>
+              <UnloadedRoom>
+                <Number>13</Number>
+                <Description xml:space="preserve">Clue room</Description>
               </UnloadedRoom>
             </UnloadedRooms>
           </UnloadedRoomFolder>
@@ -1888,7 +1900,7 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>9</StartingRoom>
+            <StartingRoom>4</StartingRoom>
             <StartX>160</StartX>
             <StartY>160</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -2436,7 +2448,22 @@ return
         <GlobalVariable>
           <Name>cellar_switch_on</Name>
           <Type>bool</Type>
-          <DefaultValue>true</DefaultValue>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>lever_value_0</Name>
+          <Type>int</Type>
+          <DefaultValue>0</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>lever_value_1</Name>
+          <Type>int</Type>
+          <DefaultValue>0</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>lever_value_2</Name>
+          <Type>int</Type>
+          <DefaultValue>0</DefaultValue>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
@@ -2651,6 +2678,61 @@ return
             <SubFolders />
             <Sprites />
           </SpriteFolder>
+          <SpriteFolder Name="numpads">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="29" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_0.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="30" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_1.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="31" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_2.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="32" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_3.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="33" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_4.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="34" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_5.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="35" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_6.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="36" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_7.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="37" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_8.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="38" Width="9" Height="16" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\number_pad\number_buttons_9.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
         </SubFolders>
         <Sprites>
           <Sprite Slot="0" Width="10" Height="6" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
@@ -2760,6 +2842,21 @@ return
           <Sprite Slot="26" Width="22" Height="10" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
             <Source>
               <FileName>Z:\home\jonas\Coding\insanityjam2\brick.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="27" Width="142" Height="68" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\grafitti.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="28" Width="142" Height="68" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\grafitti_2.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="39" Width="189" Height="71" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\grafitti_clue.png</FileName>
             </Source>
           </Sprite>
         </Sprites>
@@ -3323,6 +3420,142 @@ return
                   <ViewFrame>
                     <ID>3</ID>
                     <Image>26</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>8</ID>
+            <Name>NumPad</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>29</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>30</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>31</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>32</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>4</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>33</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>5</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>34</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>6</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>35</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>7</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>36</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>8</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>37</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>9</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>38</Image>
                     <Flipped>False</Flipped>
                     <Delay>0</Delay>
                     <Sound>0</Sound>
