@@ -2035,8 +2035,8 @@ return
     <Cursors>
       <MouseCursor>
         <ID>0</ID>
-        <HotspotX>6</HotspotX>
-        <HotspotY>15</HotspotY>
+        <HotspotX>5</HotspotX>
+        <HotspotY>5</HotspotY>
         <StandardMode>True</StandardMode>
         <Image>2054</Image>
         <View>0</View>
@@ -2047,8 +2047,8 @@ return
       </MouseCursor>
       <MouseCursor>
         <ID>1</ID>
-        <HotspotX>8</HotspotX>
-        <HotspotY>8</HotspotY>
+        <HotspotX>5</HotspotX>
+        <HotspotY>5</HotspotY>
         <StandardMode>True</StandardMode>
         <Image>2056</Image>
         <View>0</View>
@@ -2059,8 +2059,8 @@ return
       </MouseCursor>
       <MouseCursor>
         <ID>2</ID>
-        <HotspotX>8</HotspotX>
-        <HotspotY>8</HotspotY>
+        <HotspotX>5</HotspotX>
+        <HotspotY>5</HotspotY>
         <StandardMode>True</StandardMode>
         <Image>2057</Image>
         <View>0</View>
@@ -2071,8 +2071,8 @@ return
       </MouseCursor>
       <MouseCursor>
         <ID>3</ID>
-        <HotspotX>8</HotspotX>
-        <HotspotY>8</HotspotY>
+        <HotspotX>5</HotspotX>
+        <HotspotY>5</HotspotY>
         <StandardMode>True</StandardMode>
         <Image>2058</Image>
         <View>0</View>
@@ -2662,11 +2662,27 @@ return
               <Sprite Slot="2051" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2052" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2053" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2054" Width="16" Height="16" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="2054" Width="22" Height="23" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\mouse_icons\walk.png</FileName>
+                </Source>
+              </Sprite>
               <Sprite Slot="2055" Width="16" Height="16" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2056" Width="16" Height="16" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2057" Width="16" Height="16" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2058" Width="16" Height="16" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="2056" Width="21" Height="20" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\mouse_icons\eye.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2057" Width="22" Height="24" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\mouse_icons\hand.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="2058" Width="21" Height="24" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>Z:\home\jonas\Coding\insanityjam2\mouse_icons\talk.png</FileName>
+                </Source>
+              </Sprite>
               <Sprite Slot="2059" Width="16" Height="16" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2060" Width="16" Height="16" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2061" Width="16" Height="17" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
