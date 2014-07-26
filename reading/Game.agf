@@ -1765,16 +1765,6 @@ return
               <FileName>Z:\home\jonas\Coding\insanityjam2\door_up.png</FileName>
             </Source>
           </Sprite>
-          <Sprite Slot="17" Width="11" Height="14" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
-            <Source>
-              <FileName>Z:\home\jonas\Coding\insanityjam2\lever_up.png</FileName>
-            </Source>
-          </Sprite>
-          <Sprite Slot="18" Width="11" Height="14" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
-            <Source>
-              <FileName>Z:\home\jonas\Coding\insanityjam2\lever_down.png</FileName>
-            </Source>
-          </Sprite>
           <Sprite Slot="19" Width="40" Height="126" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
             <Source>
               <FileName>Z:\home\jonas\Coding\insanityjam2\bars.png</FileName>
@@ -1828,6 +1818,11 @@ return
           <Sprite Slot="39" Width="189" Height="71" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
             <Source>
               <FileName>Z:\home\jonas\Coding\insanityjam2\grafitti_clue.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="1" Width="101" Height="19" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>Z:\home\jonas\Coding\insanityjam2\images\bed.png</FileName>
             </Source>
           </Sprite>
         </Sprites>
