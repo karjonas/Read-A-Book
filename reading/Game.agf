@@ -669,15 +669,15 @@
             <UnloadedRooms>
               <UnloadedRoom>
                 <Number>1</Number>
-                <Description IsNull="True" />
+                <Description xml:space="preserve">Mat room</Description>
               </UnloadedRoom>
               <UnloadedRoom>
                 <Number>2</Number>
-                <Description IsNull="True" />
+                <Description xml:space="preserve">Starting room</Description>
               </UnloadedRoom>
               <UnloadedRoom>
                 <Number>3</Number>
-                <Description IsNull="True" />
+                <Description>Kitchen</Description>
               </UnloadedRoom>
             </UnloadedRooms>
           </UnloadedRoomFolder>
@@ -874,7 +874,7 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>4</StartingRoom>
+            <StartingRoom>2</StartingRoom>
             <StartX>160</StartX>
             <StartY>160</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -883,7 +883,7 @@
             <MovementSpeedY>0</MovementSpeedY>
             <AnimationDelay>2</AnimationDelay>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>65535</SpeechColor>
+            <SpeechColor>64170</SpeechColor>
             <Solid>True</Solid>
             <Clickable>True</Clickable>
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
@@ -1622,20 +1622,6 @@ return
                   <FileName>Z:\home\jonas\Coding\insanityjam2\hero\up8.png</FileName>
                 </Source>
               </Sprite>
-              <Sprite Slot="2040" Width="14" Height="14" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2041" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2042" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2043" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2044" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2045" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2046" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2047" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2048" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2049" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2050" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2051" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2052" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="2053" Width="32" Height="27" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2054" Width="22" Height="23" ColorDepth="16" Resolution="LowRes" AlphaChannel="False">
                 <Source>
                   <FileName>Z:\home\jonas\Coding\insanityjam2\mouse_icons\walk.png</FileName>
@@ -1660,8 +1646,6 @@ return
               <Sprite Slot="2059" Width="16" Height="16" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2060" Width="16" Height="16" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="2061" Width="16" Height="17" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="1" Width="20" Height="20" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="4" Width="20" Height="20" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
             </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="gSaveGameImport">
@@ -2229,38 +2213,6 @@ return
             </Loops>
           </View>
           <View>
-            <ID>4</ID>
-            <Name>Lever</Name>
-            <Loops>
-              <Loop>
-                <ID>0</ID>
-                <RunNextLoop>False</RunNextLoop>
-                <Frames>
-                  <ViewFrame>
-                    <ID>0</ID>
-                    <Image>17</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                </Frames>
-              </Loop>
-              <Loop>
-                <ID>1</ID>
-                <RunNextLoop>False</RunNextLoop>
-                <Frames>
-                  <ViewFrame>
-                    <ID>0</ID>
-                    <Image>18</Image>
-                    <Flipped>False</Flipped>
-                    <Delay>0</Delay>
-                    <Sound>0</Sound>
-                  </ViewFrame>
-                </Frames>
-              </Loop>
-            </Loops>
-          </View>
-          <View>
             <ID>5</ID>
             <Name>InvisibleBrick</Name>
             <Loops>
@@ -2554,7 +2506,9 @@ return
         </Views>
       </ViewFolder>
     </Views>
-    <DeletedViews />
+    <DeletedViews>
+      <ViewID>4</ViewID>
+    </DeletedViews>
     <Scripts>
       <ScriptFolder Name="Main">
         <SubFolders />
