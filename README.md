@@ -15,5 +15,9 @@ Screenshots
 License
 -------
 
-All source code and images in this repository are licensed under the CC BY 4.0 License. See https://creativecommons.org/licenses/by/4.0/
+The 'speech' font is ripped from 'Space Quest IV: Roger Wilco and the Time Rippers'.
+
+The 'normal' font and the original mouse images are created by Chris Jones.
+
+All other source code and images in this repository are created by Jonas Karlsson and licensed under the CC BY 4.0 License. See https://creativecommons.org/licenses/by/4.0/
 
